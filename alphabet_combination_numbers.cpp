@@ -32,7 +32,7 @@ void solve(string num , int curr , int n, string str){
     int valid_alpha = 0;   
      for(int i = curr; i < n ; i++){
         valid_alpha = valid_alpha * 10 + num[curr] - '0'; 
-        if(valid_alpha < 27) // IF AN ALPHABET CAN BE FORMED USING 1 OR 2 DIGITS
+        if(valid_alpha < 27) // IF AN ALPHABET CAN BE FORMED USING 1 OR 2 DIGIT(S)
             solve(num,i+1,n,str + (char)('a' + valid_alpha - 1)); // CHECK THE COMBINATION FOR OTHER DIGITS AND APPEND THE RESULTANT ALPHA AT LAST
     }
 }
