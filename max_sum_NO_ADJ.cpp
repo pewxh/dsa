@@ -6,7 +6,7 @@
     5 
     12 4 6 7 9
     OUTPUT -> 
-
+    27
 */
 
 #include<iostream>
