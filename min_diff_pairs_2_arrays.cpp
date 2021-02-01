@@ -16,7 +16,7 @@
 using namespace std;
 
 pair<int,int> minDiff(int *arr1,int *arr2,int n,int m){
-    int i = 0 , j = 0; // i AND j ARE INDEX POINTERS FOR arr1 AND arr2 RESP.
+    int i = 0, j = 0; // i AND j ARE INDEX POINTERS FOR arr1 AND arr2 RESP.
     int min_d = INT_MAX; // TO STORE THE MINIMUM DIFFERENCE
     pair<int,int> res; // RESULT PAIR
     while(i < n && j < m){
