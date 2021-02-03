@@ -37,7 +37,7 @@ pair<int,int> maxRange(int *arr,int n){
             mp[right] = false;
             right++;
             curr_length++;
-        } // FINDS THE LEFT MOST ELEMENT FOR OUR RANGE (- 1) 
+        } // FINDS THE RIGHT MOST ELEMENT FOR OUR RANGE (- 1) 
         if(curr_length > max_range_length){
             max_range_length = curr_length; // UPDATE MAX LENGTH 
             range = make_pair(left+1,right-1); // UPDATE RESULT range 
