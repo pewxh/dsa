@@ -5,7 +5,7 @@
     INPUT ->
     19
     OUTPUT -> 
-    2584
+    4181
     HINT/REF -> https://www.youtube.com/watch?v=nN8Tk70-DOc
 */
 
@@ -26,9 +26,10 @@ int main(){
     ll **mat = new ll*[2];
     mat[0] = new ll[2]{1,1};
     mat[1] = new ll[2]{1,0};
-    ll** mat_n = matrixPow((ll **)mat,n-2,2);
+    ll** mat_n = matrixPow((ll **)mat,n-1,2);
+    // matrixPrint(mat_n,2,2);
     res = (mat_n[1][0] + mat_n[1][1]) % MOD;
-    if(n==1 )  res = 0;
+    if(n==0)  res = 0;
     cout << res;
     return 0;
 }
