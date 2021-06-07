@@ -351,3 +351,5 @@ MigrationBackup/
 
 #CPH Directory
 .cph/
+
+*.exe
