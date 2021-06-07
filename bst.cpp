@@ -21,10 +21,18 @@ TreeNode::TreeNode(int v){
 class BST{
     public:
         TreeNode* root;
+        BST();
         bool isEmpty();
+        void insert(TreeNode*);
 };
+BST::BST(){
+    root = NULL;
+}
 bool BST::isEmpty(){
     return (root == NULL);
+}
+void BST::insert(TreeNode *p){
+    
 }
 
 int main(){
