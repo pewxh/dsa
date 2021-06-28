@@ -353,3 +353,5 @@ MigrationBackup/
 .cph/
 
 *.exe
+
+workspace.code-workspace
